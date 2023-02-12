@@ -16,25 +16,24 @@ public class Task3 {
         int sNumb = sc.nextInt();
         switch (znak) {
             case 1:
-                System.out.printf("Результат: %d + %d = %d\n", fNumb, sNumb, fNumb+sNumb);
+                System.out.printf("Результат: %d + %d = %d\n", fNumb, sNumb, fNumb + sNumb);
                 break;
             case 2:
-                System.out.printf("Результат: %d - %d = %d\n", fNumb, sNumb, fNumb-sNumb);
+                System.out.printf("Результат: %d - %d = %d\n", fNumb, sNumb, fNumb - sNumb);
                 break;
             case 3:
-                System.out.printf("Результат: %d * %d = %d\n", fNumb, sNumb, fNumb*sNumb);
+                System.out.printf("Результат: %d * %d = %d\n", fNumb, sNumb, fNumb * sNumb);
                 break;
             case 4:
-                if (sNumb != 0){
-                    System.out.printf("Результат: %d / %d = %d\n", fNumb, sNumb, fNumb/sNumb);
+                if (sNumb != 0) {
+                    System.out.printf("Результат: %d / %d = %d\n", fNumb, sNumb, fNumb / sNumb);
                     break;
-                }
-                else {
+                } else {
                     System.out.printf("Деление на 0!!! Попробуйсте снова.");
                     break;
                 }
-                
-        } 
+
+        }
         sc.close();
     }
 }

@@ -12,7 +12,7 @@ public class Task1 {
         for (int i = 1; i <= N; i++) {
             fact = fact * i;
         }
-        System.out.printf("Треугольное число: %d\n", (N * (N+1))/2);
+        System.out.printf("Треугольное число: %d\n", (N * (N + 1)) / 2);
         System.out.printf("Факториал числа %d: %d", N, fact);
 
         sc.close();
