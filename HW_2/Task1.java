@@ -11,12 +11,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-
 public class Task1 {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         String str = "empty";
         try (BufferedReader br = new BufferedReader(new FileReader("Java_HW/HW_2/Text1.txt"))) {
-            StringBuilder strBuilder = new StringBuilder();
             str = br.readLine();
         }
         StringBuilder strBuilder = new StringBuilder("SELECT * FROM students WHERE ");
@@ -29,14 +27,14 @@ public class Task1 {
             String key = keyValueStrings[0];
             key = key.substring(1, key.length() - 1);
             String value = keyValueStrings[1];
-            
+
             if (value.equals("\"null\""))
                 continue;
-                if (!first)
-                    strBuilder.append(" AND ");
-                first = false;
-                strBuilder.append(String.format("%s = %s", key, value));
-                
+            if (!first)
+                strBuilder.append(" AND ");
+            first = false;
+            strBuilder.append(String.format("%s = %s", key, value));
+
         }
         strBuilder.append(";");
 
