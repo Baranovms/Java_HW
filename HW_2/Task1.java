@@ -10,7 +10,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.Thread.Builder;
+
 
 public class Task1 {
     public static void main(String[] args) throws FileNotFoundException, IOException {
@@ -22,9 +22,9 @@ public class Task1 {
         StringBuilder strBuilder = new StringBuilder("SELECT * FROM students WHERE ");
 
         str = str.substring(1, str.length() - 1);
-        String[] arrStringsStrings = str.split(", ");
+        String[] arrStrings = str.split(", ");
         boolean first = true;
-        for (String string : arrStringsStrings) {
+        for (String string : arrStrings) {
             String[] keyValueStrings = string.split(":");
             String key = keyValueStrings[0];
             key = key.substring(1, key.length() - 1);
