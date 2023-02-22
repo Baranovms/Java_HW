@@ -11,7 +11,7 @@ public class Task2 {
         Random myRandom = new Random();
 
         for (int i = 0; i < 20; i++) {
-            int array =R.nextInt(-20,20);
+            int array = myRandom.nextInt(-20,20);
             list.add(array);
         }
         System.out.println(list);
