@@ -20,6 +20,7 @@ public class Task1 {
         System.out.println("Введите номер телефона:");
         String inputPhone = scanner.nextLine();
         number.add(inputPhone);
+        scanner.close();
         return number;
     }
 
@@ -36,6 +37,8 @@ public class Task1 {
         keyValue.put("secondName", secondName);
         keyValue.put("description", comment);
 
+        scanner.close();
         return keyValue;
     }
+    
 }
